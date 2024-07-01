@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Resources</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style>
+      body {
+        background-color: #f8f7f4 !important;
+      }
+      .download-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #435585;
+        color: #f7f7f7;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .download-btn:hover {
+        background-color: #363062;
+        color: #f7f7f7;
+      }
+
+      .download-icon {
+        margin-right: 5px;
+      }
+
+      .download-btn::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        transform: translateX(-50%) scaleX(0);
+        transition: transform 0.5s ease-in-out;
+        z-index: 1;
+      }
+
+      .download-btn:hover::after {
+        transform: translateX(-50%) scaleX(1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="text-center mt-5">
+      <h1>Python Programming Basic</h1>
+      <h3>Course Content</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-lg-6 mx-auto">
+          <div class="card mt-5">
+            <div class="card-body">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Chapter 1 : Introduction to Python
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <!-- Resource -->
+                      <div class="d-flex justify-content-between">
+                        <h3>Slides</h3>
+
+                        <!-- Button -->
+                        <a href="./resource/chapter1.pdf" class="download-btn" download="./resource/chapter1.pdf">
+                          <i class="fas fa-download download-icon"></i>
+                          Download
+                        </a>
+                      </div>
+                      <!-- End Resource -->
+                      <!-- Excercise -->
+                      <!-- <div class="d-flex justify-content-between mt-3">
+                        <h3>Excercise</h3>
+
+                        <a
+                          href="./Python_Programming_Language_by_Dipesh_Siwakoti_.pdf"
+                          class="download-btn"
+                          download="Python_Programming_Language_by_Dipesh_Siwakoti_.pdf"
+                        >
+                          <i class="fas fa-download download-icon"></i>
+                          Download
+                        </a>
+                      </div> -->
+                      <!-- End Exercise -->
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Chapter 2 : Working with Python
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <!-- Content -->
+
+                      <div class="d-flex justify-content-between">
+                        <h2>Slides</h2>
+
+                        <!-- Button -->
+                        <a
+                          href="./resource/chapter2.pdf"
+                          class="download-btn"
+                          download="Python_Programming_Language_by_Dipesh_Siwakoti_.pdf"
+                        >
+                          <i class="fas fa-download download-icon"></i>
+                          Download
+                        </a>
+                      </div>
+                      <!-- End Content -->
+                      <!-- Excercise -->
+                      <div class="d-flex justify-content-between mt-3">
+                        <h5>Excercise of Variables</h5>
+
+                        <!-- Button -->
+                      </div>
+                      <code>
+                        # Write a python program, create variables with literals of # int, float, string, boolean #
+                        print the type of each variable # print the value of each variable # print the value of each
+                        variable in a sentence # Note: Please use Camel Case or Pascal Case
+                      </code>
+                      <!-- End Exercise -->
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Chapter 3 : Conditional Statements
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>Comming Soon!</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
