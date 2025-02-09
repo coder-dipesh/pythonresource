@@ -1,21 +1,497 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Rose Day Nanu 🌹</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Python Resources | Dipesh Siwakoti</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        background-color: #f8f7f4;
+      }
+      .content {
+        flex: 1;
+      }
+      .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+
+      .download-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #435585;
+        color: #f7f7f7;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .download-btn:hover {
+        background-color: #363062;
+        color: #f7f7f7;
+      }
+
+      .download-icon {
+        margin-right: 5px;
+      }
+
+      .download-btn::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        transform: translateX(-50%) scaleX(0);
+        transition: transform 0.5s ease-in-out;
+        z-index: 1;
+      }
+
+      .download-btn:hover::after {
+        transform: translateX(-50%) scaleX(1);
+      }
+    </style>
   </head>
+
   <body>
-    <div class="message">Happy Rose Day! 🌹</div>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <dotlottie-player
-      src="https://lottie.host/46c80a3b-bdc4-4122-b760-dd80b099d990/Wq7Orb4QEu.lottie"
-      background="transparent"
-      speed="1"
-      style="width: 300px; height: 300px"
-      loop
-      autoplay
-    ></dotlottie-player>
+    <div class="content">
+      <div class="text-center mt-5">
+        <h1>Python Programming Basic</h1>
+        <h3>Course Content</h3>
+      </div>
+      <div class="container-fluid" data-bs-theme="dark">
+        <div class="row" data-bs-theme="dark">
+          <div class="col-md-10 col-lg-6 mx-auto" data-bs-theme="dark">
+            <div class="card mt-5" data-bs-theme="dark">
+              <div class="card-body">
+                <div class="accordion" id="accordionExample" data-bs-theme="dark">
+                  <div class="accordion-item" data-bs-theme="dark">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                        data-bs-theme="dark"
+                      >
+                        Chapter 1 : Introduction to Python
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body" data-bs-theme="dark">
+                        <!-- Resource -->
+                        <div class="d-flex justify-content-between">
+                          <h3>Slides</h3>
+                          <div class="d-flex gap-3">
+                            <a target="_blank" href="./resource/chapter1.png" class="btn btn-primary"> View Online </a>
+                            <!-- Button -->
+                            <a href="./resource/chapter1.png" class="download-btn" download="./resource/chapter1.pdf">
+                              <i class="fas fa-download download-icon"></i>
+                              Download
+                            </a>
+                          </div>
+                        </div>
+                        <!-- End Resource -->
+                        <!-- Excercise -->
+                        <!-- <div class="d-flex justify-content-between mt-3">
+                        <h3>Excercise</h3>
+
+                        <a
+                          href="./Python_Programming_Language_by_Dipesh_Siwakoti_.pdf"
+                          class="download-btn"
+                          download="Python_Programming_Language_by_Dipesh_Siwakoti_.pdf"
+                        >
+                          <i class="fas fa-download download-icon"></i>
+                          Download
+                        </a>
+                      </div> -->
+                        <!-- End Exercise -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Chapter 2 : Working with Python
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- Content -->
+
+                        <div class="d-flex justify-content-between">
+                          <h2>Slides</h2>
+                          <div class="d-flex gap-3">
+                            <a target="_blank" href="./resource/chapter2.png" class="btn btn-primary"> View Online </a>
+                            <!-- Button -->
+                            <a href="./resource/chapter2.png" class="download-btn" download="./resource/chapter2.png">
+                              <i class="fas fa-download download-icon"></i>
+                              Download
+                            </a>
+                          </div>
+                        </div>
+
+                        <!-- End Content -->
+                        <!-- Excercise -->
+                        <div class="d-flex justify-content-between mt-3">
+                          <h5>Exercise of Variables</h5>
+
+                          <!-- Button -->
+                        </div>
+                        <code>
+                          # Write a python program, create variables with literals of <br />
+                          # int, float, string, boolean <br />
+                          #print the type of each variable <br />
+                          # print the value of each variable <br />
+                          # print the value of each<br />
+                          variable in a sentence <br />
+                          # Note: Please use Camel Case or Pascal Case
+                        </code>
+                        <!-- End Exercise -->
+                        <!-- Excercise -->
+                        <h5 class="mt-3">Exercise of Conditional Statement</h5>
+                        <code>
+                          # Task 1 <br />
+                          # Write a python program to display students grade <br />
+                          # First ask user score using input method <br />
+                          # Check if user score above 90, print your grade is A <br />
+                          # Check if user score above 75, print your grade is B <br />
+                          # Check if user score above 65, print your grade is C <br />
+                          # Check if user score below 40, print your grade is Fail
+                        </code>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Chapter 3 : Python Loop
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- Resource -->
+                        <div class="d-flex justify-content-between">
+                          <h3>Slides</h3>
+                          <div class="d-flex gap-3">
+                            <a target="_blank" href="./resource/chapter3.png" class="btn btn-primary"> View Online </a>
+                            <!-- Button -->
+                            <a href="./resource/chapter3.png" class="download-btn" download="./resource/chapter3.png">
+                              <i class="fas fa-download download-icon"></i>
+                              Download
+                            </a>
+                          </div>
+                        </div>
+                        <!-- End Resource -->
+                        <!-- Excercise -->
+                        <div class="d-flex justify-content-between mt-3">
+                          <h5>Exercise of Loops</h5>
+                          <!-- Button -->
+                        </div>
+                        <code>
+                          Q1. Write a program to print multiplication table of a given number(accept number from
+                          user)<br />
+                          eg. if user input 3 <br />
+                          3 x 1 = 3 <br />
+                          3 x 2 = 6 and so on <br />
+                          Q2. Accept 10 numbers from user and display average of it. <br />
+                          Q3. Write a program to display numbers which is divisible by only 11 from 100 to 300.<br />
+                          <hr />
+                          Note: If you wish to practice more questions, please proceed.
+                        </code>
+                        <!-- End Exercise -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        Chapter 4 : Python Data Types
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- Resource -->
+                        <div class="d-flex justify-content-between">
+                          <h3>Slides</h3>
+                          <div class="d-flex gap-3">
+                            <a target="_blank" href="./resource/chapter4.png" class="btn btn-primary"> View Online </a>
+                            <!-- Button -->
+                            <a href="./resource/chapter4.png" class="download-btn" download="./resource/chapter4.png">
+                              <i class="fas fa-download download-icon"></i>
+                              Download
+                            </a>
+                          </div>
+                        </div>
+                        <!-- End Resource -->
+                        <!-- Excercise -->
+                        <div class="d-flex justify-content-between mt-3">
+                          <h5>Exercise Coming Soon!</h5>
+                          <!-- Button -->
+                        </div>
+
+                        <!-- End Exercise -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        Chapter 5 : Python Functions
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFive"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingFive"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- Resource -->
+                        <div class="d-flex justify-content-between">
+                          <h3>Slides</h3>
+                          <div class="d-flex gap-3">
+                            <a target="_blank" href="./resource/chapter5.png" class="btn btn-primary"> View Online </a>
+                            <!-- Button -->
+                            <a href="./resource/chapter5.png" class="download-btn" download="./resource/chapter5 .png">
+                              <i class="fas fa-download download-icon"></i>
+                              Download
+                            </a>
+                          </div>
+                        </div>
+                        <!-- End Resource -->
+                        <!-- Excercise -->
+                        <div class="d-flex flex-column justify-content-between mt-3">
+                          <h3>Practice Question</h3>
+                          <code>
+                            Q1. Develop a game where the computer randomly selects a number within a specified range,
+                            and the user has to guess the number.<br />
+                            Provide hints if the guessed number is too high or too low. <br />
+                            After user guess correct number display guess attempts and the exact answer too.<br />
+                            Make sure user does not input other than integer, if its other data type show them invalid
+                            input.<br /><br />
+                            Hint: Use while loop, generate random number use python random.randint() function
+                          </code>
+                          <hr />
+                          <code>
+                            Write a Python function that accepts a string and counts the number of upper and lower case
+                            letters.<br />
+                            Sample String : 'The quick Brow Fox'<br />
+
+                            Expected Output : <br />
+                            No. of Upper case characters: 3 <br />
+                            No. of Lower case Characters : 12 <br /><br />
+
+                            Note: If you can take string input from user you can do it .
+                          </code>
+                          <!-- Button -->
+                        </div>
+
+                        <!-- End Exercise -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix"
+                        aria-expanded="false"
+                        aria-controls="collapseSix"
+                      >
+                        Chapter 6 : Installation
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseSix"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingSix"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- Resource -->
+                        <div class="d-flex flex-column justify-content-between">
+                          <h3>Install</h3>
+                          <!-- <div class="d-flex gap-3">
+                            <a target="_blank" href="https://www.anaconda.com/download/success" class="btn btn-primary">
+                              Download Anaconda
+                            </a>
+                            <a
+                              target="_blank"
+                              href="https://www.youtube.com/watch?v=WOK9HeB-OmY"
+                              class="btn btn-primary"
+                            >
+                              View Youtube Tutorial
+                            </a>
+                          
+                          </div> -->
+                          <div class="bg-light p-4">
+                            <p>Use jyupter notebook locally</p>
+                            <p>
+                              Install notebook
+
+                              <code> pip install notebook </code>
+                            </p>
+                            <p>
+                              To run notebook
+
+                              <code>jupyter notebook </code>
+                            </p>
+                          </div>
+                          <div>
+                            <p>Run basic numpy</p>
+                            <code>
+                              import numpy as np <br />
+                              arr = np.array([1, 2, 3, 4, 5]) <br />
+                              print(arr)
+                            </code>
+                          </div>
+                        </div>
+                        <!-- End Resource -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven"
+                        aria-expanded="false"
+                        aria-controls="collapseSeven"
+                      >
+                        Chapter 7 : Python Data
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseSeven"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingSeven"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- Resource -->
+                        <div class="d-flex flex-column justify-content-between">
+                          <h3>Dataset</h3>
+                          <div class="d-flex flex-column gap-3">
+                            <a target="_blank" href="./resource/nba.csv" class="btn btn-primary">
+                              Download nba Dataset
+                            </a>
+                            <a target="_blank" href="./resource/data.csv" class="btn btn-primary">
+                              Download data Dataset
+                            </a>
+                            <a target="_blank" href="./resource/coffeeandcode.csv" class="btn btn-primary">
+                              Download coffeeandcode Dataset
+                            </a>
+                            <a target="_blank" href="./resource/IMDB-Dataset.csv" class="btn btn-primary">
+                              Download IMDB-Dataset
+                            </a>
+                          </div>
+                          <h3>NumPY</h3>
+                          <a target="_blank" href="./resource/basicNumpy.ipynb" class="btn btn-primary"> NumPY File </a>
+                          <h3>Pandas</h3>
+                          <a target="_blank" href="./resource/basicPandas.ipynb" class="btn btn-primary">
+                            Pandas File
+                          </a>
+                          <h3>Data Handling Using Pandas</h3>
+                          <a target="_blank" href="./resource/HandlinngUsingPandas.pdf" class="btn btn-primary">
+                            Data Handling Using Pandas PDF</a
+                          >
+                          <h3>Visualization</h3>
+                          <a target="_blank" href="./resource/dataVisualization.ipynb" class="btn btn-primary">
+                            Visualization File
+                          </a>
+                        </div>
+                        <!-- End Resource -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-10 text-center">
+      <div class="container">
+        <span class="text-muted"
+          >Copyright © 2024
+          <a target="_blank" class="text-decoration-underline text-muted" href="https://dipeshsiwakoti.com.np"
+            >Dipesh Siwakoti</a
+          >
+          . Educational content do not reuse without permission.
+        </span>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
